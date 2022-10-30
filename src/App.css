@@ -9,21 +9,27 @@ header{
   margin-top: 64px;
 }
 .buttons {
+  display: flex;
+  flex-direction: column;
   padding: 50px;
   align-items: center;
   justify-content: center;
 }
- button {
+ a{
+  background-color: #EAECF0;
+  text-decoration: none;
+  justify-content: center;
+  color: black;
+  text-align: center;
   padding: 20px;
   margin: 10px;
   width: 100%;
   border: none;
-  margin-left: -5px;
-  position: relative;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 #social-icons{
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-bottom: 100px;
   margin-top: 30px;
@@ -31,7 +37,15 @@ header{
 #logos{
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-top: 50px;
   padding-top: 30px;
   border-top: 1px solid gray;
+}
+
+@media screen and (max-width: 760px) {
+  #logos{
+    display: flex;
+    flex-direction: column;
+  }
 }

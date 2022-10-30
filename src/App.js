@@ -6,25 +6,39 @@ import github from './github.png';
 import zuri from './zuriLogo.png';
 import Ig4 from './I4G.png';
 import text from './Footer_text.png';
+import share from './share_button.png';
 
 
 function App() {
   return (
     <div>
-      <header>
+      <header id='head'>
         <img id='profile__img' src={ profile } />
         <img />
-        <h2>Annette Black</h2>
+        <h2>Eniola Kuranga</h2>
+        <img src={ share } />
       </header>
       <div className='buttons'>
-        <button>Twitter link</button>
-        <button id='btn__zuri'>Zuri Team</button>
-        <button id='books'>Zuri Books</button>
-        <button id='book__python'>Python Books</button>
-        <button id='pitch'>Background Check for coders</button>
-        <button id='book_design'>Design Books</button>
+        <a href='https://twitter.com/bat_syyyy'>
+          Twitter link
+        </a>
+        <a id='btn__zuri' href='https://training.zuri.team/' alt='zuri team'>
+             Zuri Team
+        </a>
+        <a id='books' href='http://books.zuri.team/' alt='zuri books'>
+            Zuri Books
+        </a>
+        <a id='book__python' href='https://books.zuri.team/python-for-beginners?ref_id=EniolaKuranga' alt='python books'>
+            Python Books
+        </a>
+        <a id='pitch' href='https://background.zuri.team' alt='background'>
+            Background Check for coders
+        </a>
+        <a id='book_design' href="https://books.zuri.team/design-rules" alt='design'>
+            Design Books
+        </a>
         <div id='social-icons'>
-          <img src={ slack } />
+          <img src={ slack } id='slack' onClick={""}/>
           <img src={ github } />
         </div>
         <footer id='logos'>
