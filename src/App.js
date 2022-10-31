@@ -13,6 +13,7 @@ function App() {
   return (
     <div>
       <header id='head'>
+        {/* <p>Eniola Kuranga</p> */}
         <img id='profile__img' src={ profile } />
         <img />
         <h2>Eniola Kuranga</h2>
